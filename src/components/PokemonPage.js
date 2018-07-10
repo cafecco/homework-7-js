@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router'
+import { Link } from 'react-router-dom';
 
 const BASE_URL = 'http://localhost:3300/pokemons';
 
@@ -49,7 +50,14 @@ class PokemonPage extends Component {
     }
 
     return (
-      data.name
+        <div  className="container" style={{ width: '15%', margin: '5px'}}>
+            <Link to="/"><h2  className="btn btn-outline-secondary">&#8592; To all pokemons</h2></Link>
+        <h2>{data.name}</h2>
+        <img
+          src={`https://raw.githubusercontent.com/epam-js-may-2018/homework-7-js/master/pokemons/${this.props.match.params.id}.png`}
+          style={{ width: '100%' }}
+        />
+    </div>
     )
   }
 }

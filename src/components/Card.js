@@ -13,7 +13,7 @@ const Card = (props) => {
           {
             props.catched
               ? <span>{formattedTime}</span>
-              : <button type="button" onClick={props.onCatchPokemon}>Catch</button>
+              : <button className="btn btn-outline-info" type="button" onClick={props.onCatchPokemon}>Catch</button>
           }
           <img
             src={`https://raw.githubusercontent.com/epam-js-may-2018/homework-7-js/master/pokemons/${props.id}.png`}

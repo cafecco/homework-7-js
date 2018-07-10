@@ -35,7 +35,7 @@ class Cathed extends Component {
     return (
       <main className = "container" style={{ width: '100vw', minHeight: '100vh' }}>
         <h1>List of Cathced pokemons</h1>
-        <Link to="/"><h2  className="poks">← To all pokemons</h2></Link>
+        <Link to="/"><h2  className="btn btn-outline-secondary"> &#8592; To all pokemons</h2></Link>
 
         <div style={{ display: 'flex', flexWrap: 'wrap' }}>
           {this.state.list.map(pokemon => (

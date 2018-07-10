@@ -65,7 +65,7 @@ class Home extends Component {
 
             <h1>choose pokemons, catch them</h1>
 
-        <Link to="/catched"><h2 className="poks">← Catched pokemons</h2></Link>
+        <Link to="/catched"><h2 className="btn btn-outline-secondary">&#8592; Catched pokemons</h2></Link>
         <div style={{ display: 'flex', flexWrap: 'wrap' }}>
           {this.state.list.map(pokemon => (
             <Card
@@ -85,6 +85,7 @@ class Home extends Component {
               <div className = "load_button"><button
                 type="button"
                 onClick={this.loadPokemons}
+                className="btn btn-outline-secondary"
               >
                 Load more
               </button>
