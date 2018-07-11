@@ -44,7 +44,6 @@ class PokemonPage extends Component {
     if (isLoading) {
       return (<div>LOADING</div>);
     }
-
     if (error) {
       return (<div>{error.message}</div>)
     }
@@ -52,12 +51,12 @@ class PokemonPage extends Component {
     return (
         <div  className="container" style={{ width: '15%', margin: '5px'}}>
             <Link to="/"><h2  className="btn btn-outline-secondary">&#8592; To all pokemons</h2></Link>
-        <h2>{data.name}</h2>
-        <img
-          src={`https://raw.githubusercontent.com/epam-js-may-2018/homework-7-js/master/pokemons/${this.props.match.params.id}.png`}
-          style={{ width: '100%' }}
-        />
-    </div>
+            <h2>{data.name}</h2>
+            <img
+                src={`https://raw.githubusercontent.com/epam-js-may-2018/homework-7-js/master/pokemons/${this.props.match.params.id}.png`}
+                style={{ width: '100%' }}
+            />
+        </div>
     )
   }
 }

@@ -62,9 +62,7 @@ class Home extends Component {
   render() {
     return (
       <main className="container">
-
-            <h1>choose pokemons, catch them</h1>
-
+        <h1>choose pokemons, catch them</h1>
         <Link to="/catched"><h2 className="btn btn-outline-secondary">&#8592; Catched pokemons</h2></Link>
         <div style={{ display: 'flex', flexWrap: 'wrap' }}>
           {this.state.list.map(pokemon => (
